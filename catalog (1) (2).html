@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Catalog</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            max-width: 100px;
+            max-height: 150px;
+        }
+        .add-to-cart {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Book Catalog</h1>
+    <table>
+        <tr>
+            <th>Book Cover</th>
+            <th>Author Name</th>
+            <th>Publisher</th>
+            <th>Price</th>
+            <th>Add to Cart</th>
+        </tr>
+        <tr>
+            <td><img src="3.jpg" alt="Rich dad poor dad"></td>
+            <td>Robert T. Kiyosaki </td>
+            <td>?Plata Publishing house</td>
+            <td>$75</td>
+            <td><button class="add-to-cart" onclick="addToCart('')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td><img src="5.jpg" alt="The Night Life of Trees" width="100px"></td>
+            <td>Bhajju Shyam</td>
+            <td>Tara Books</td>
+            <td>$249</td>
+            <td><button class="add-to-cart" onclick="addToCart('book2')">Add to Cart</button></td>
+        </tr>
+        <!-- Add more book entries here -->
+    </table>
+
+    <script>
+        function addToCart(bookId) {
+            // Implement your add to cart functionality here
+            // You can use JavaScript to handle the cart functionality or connect to your backend.
+            alert(`Book ${bookId} added to cart!`);
+        }
+    </script>
+</body>
+</html>
